@@ -1,0 +1,22 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "portfolio",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss styles/portfolio.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nmccooey/portfolio.git"
+  },
+  "author": "Nicholas McCooey",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nmccooey/portfolio/issues"
+  },
+  "homepage": "https://github.com/nmccooey/portfolio#readme",
+  "devDependencies": {
+    "node-sass": "^4.14.1"
+  }
+}
