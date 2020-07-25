@@ -37,6 +37,12 @@ body {
     opacity: 1;
     transform: translate(0); } }
 
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
 body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
@@ -78,6 +84,28 @@ body {
     transform: scale(1.03);
     text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
 
+.heading-tertiary {
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-transform: uppercase; }
+
+.paragraph {
+  font-size: 1.6rem; }
+  .paragraph:not(:last-child) {
+    margin-bottom: 3rem; }
+
+.u-center-text {
+  text-align: center; }
+
+.u-margin-bottom-small {
+  margin-bottom: 1.5rem; }
+
+.u-margin-bottom-medium {
+  margin-bottom: 4rem; }
+
+.u-margin-bottom-big {
+  margin-bottom: 8rem; }
+
 .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
@@ -103,9 +131,32 @@ body {
   animation: moveInBottom .5s ease-out .25s;
   animation-fill-mode: backwards; }
 
+.composition {
+  position: relative; }
+  .composition__photo {
+    width: 50%;
+    border-radius: 2px;
+    position: absolute;
+    transition: all .2s;
+    filter: drop-shadow(1px 1px 2px #222); }
+    .composition__photo--p1 {
+      left: 0;
+      top: 0;
+      width: 35%; }
+    .composition__photo--p2 {
+      left: 66%;
+      top: 0;
+      width: 35%; }
+    .composition__photo--p3 {
+      left: 32%;
+      top: 50%;
+      width: 35%; }
+    .composition__photo:hover {
+      transform: scale(1.1);
+      filter: drop-shadow(1.5px 1.5px 4px #222); }
+
 .row {
   max-width: 114rem;
-  background-color: #eee;
   margin: 0 auto; }
   .row:not(:last-child) {
     margin-bottom: 8rem; }
@@ -114,13 +165,11 @@ body {
     display: table;
     clear: both; }
   .row [class^="col-"] {
-    background-color: orangered;
     float: left; }
     .row [class^="col-"]:not(:last-child) {
       margin-right: 6rem; }
   .row .col-1-of-2 {
     width: calc((100% - 6rem) / 2);
-    background-color: orangered;
     float: left; }
     .row .col-1-of-2:not(:last-child) {
       margin-right: 6rem; }
@@ -148,7 +197,8 @@ body {
     left: 4rem; }
   .header__logo {
     height: 10rem;
-    border-radius: 50%; }
+    border-radius: 50%;
+    animation: fadeIn 1s ease-out; }
     .header__logo:hover {
       transition: .3s;
       transform: scale(1.2); }

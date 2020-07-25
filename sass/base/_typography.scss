@@ -1,7 +1,7 @@
 body {
     font-family: "Lato", sans-serif;
     font-weight: 400;
-    font-size: 1.6rem;
+    font-size: $default-font-size;
     line-height: 1.7;
     color: $color-grey-dark;
     padding: 3rem;
@@ -18,7 +18,7 @@ body {
         font-size: 6rem;
         font-weight: 400;
         letter-spacing: 15px;
-        animation: moveInLeft 1s ease-out
+        animation: moveInLeft 1s ease-out;
     }
 
     &--sub {
@@ -26,7 +26,7 @@ body {
         font-size: 2rem;
         font-weight: 700;
         letter-spacing: 1rem;
-        animation: moveInRight 1s ease-out
+        animation: moveInRight 1s ease-out;
     }
 }
 
@@ -47,4 +47,18 @@ body {
         text-shadow: .5rem 1rem 2rem rgba($color-black, 0.2);
     }
 
+}
+
+.heading-tertiary {
+    font-size: $default-font-size;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.paragraph {
+    font-size: $default-font-size;
+
+    &:not(:last-child) {
+        margin-bottom: 3rem;
+    }
 }
