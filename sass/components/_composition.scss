@@ -8,10 +8,22 @@
         transition: all .2s;
         filter: drop-shadow(1px 1px 2px #222);
 
+        @include respond(tab-port) {
+            float: left;
+            position: relative;
+            width: 28.3%;
+        }
+
         &--p1 {
             left: 0;
             top: 0;
             width: 35%;
+        }
+
+        @include respond(tab-port) {
+            top: 0;
+            left: 0;
+            width: 33%;                
         }
 
         &--p2 {
@@ -20,10 +32,23 @@
             width: 35%;
         }
 
+        @include respond(tab-port) {
+            top: 0;
+            left: 0;
+            width: 33%;                
+            z-index: 100;
+        }
+
         &--p3 {
             left: 32%;
             top: 50%;
             width: 35%;
+        }
+
+        @include respond(tab-port) {
+            top: 0;
+            left: 0;
+            width: 33%;
         }
 
         &:hover {
