@@ -9,6 +9,7 @@
         display: inline-block;
         border-radius: 10rem;
         transition: all .2s;
+        font-size: $default-font-size;
     }
 
     &:hover {

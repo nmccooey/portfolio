@@ -2,20 +2,22 @@
     // Functionality
     perspective: 150rem;
     -moz-perspective: 150rem;
+    -webkit-perspective: 150rem;
     position: relative;
-    height: 50rem;
+    height: 40rem;
 
     &__side {
         color: #fff;
-        height: 50rem;
+        font-size: 2rem;
+
+        height: 30rem;
         transition: all .8s ease;
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
-        -webkit-backface-visibility: hidden;
         backface-visibility: hidden;
-        border-radius: 20px;
+        border-radius: 3px;
         overflow: hidden;
         box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
 
@@ -51,29 +53,40 @@
     // Front Side Styling.
     &__picture {
         background-size: cover;
-        height: 23rem;
+        background-position: center center;
+        height: 12rem;
         background-blend-mode: screen;
-        -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        -moz-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);        
         clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-        border-top-left-radius: 3px;
-        border-top-right-radius: 3px;
         
         &--1 {
             background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark), 
+            url(../img/bob_ross.jpeg);
+        }
+
+        &--2 {
+            background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark), 
+            url(../img/bob_ross.jpeg);
+        }
+
+        &--3 {
+            background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark), 
             url(../img/bob_ross.jpeg);
         }
     }
 
     &__heading {
         font-size: 2.8rem;
-        font-weight: 300;
+        font-weight: 400;
         text-transform: uppercase;
         text-align: right;
         color: $color-white;
         position: absolute;
-        top: 15rem;
+        top: 2rem;
         right: 2rem;
-        width: 75%;
+        width: 70%;
+        line-height: 3.5rem;
     }
 
     &__heading-span {
@@ -102,7 +115,7 @@
     }
 
     &__details {
-        padding: 3rem;
+        padding: 1rem 3rem;
         color: $color-black;
 
         ul {
@@ -113,7 +126,7 @@
             li {
                 text-align: center;
                 font-size: 1.5rem;
-                padding: 1rem;
+                padding: 0.5rem;
 
                 &:not(:last-child) {
                     border-bottom: 1px solid #eee;
@@ -127,7 +140,7 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        width: 90%;
+        width: 80%;
         text-align: center;
     }
 
