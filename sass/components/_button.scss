@@ -6,19 +6,19 @@
         padding: 1.5rem 4rem;
         display: inline-block;
         border-radius: 10rem;
-        transition: all .2s;
+        transition: all 0.2s;
         font-size: $default-font-size;
     }
 
     &:hover {
-        transform: translateY(-.3rem);
-        box-shadow: 0 1rem 2rem rgba($color-black,0.2);
+        transform: translateY(-0.3rem);
+        box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
         transform: scale(1.05);
     }
 
     &:active {
         transform: translateY(-1px);
-        box-shadow: 0 .5rem 1rem rgba($color-black,0.2);
+        box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2);
     }
 
     &--white {
@@ -27,7 +27,7 @@
     }
 
     &--animated {
-        animation: moveInBottom .5s ease-out .25s;
+        animation: moveInBottom 0.5s ease-out 0.25s;
         animation-fill-mode: backwards;
     }
 }

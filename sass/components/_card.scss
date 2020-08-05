@@ -11,7 +11,7 @@
         font-size: 2rem;
 
         height: 30rem;
-        transition: all .8s ease;
+        transition: all 0.8s ease;
         position: absolute;
         top: 0;
         left: 0;
@@ -19,7 +19,7 @@
         backface-visibility: hidden;
         border-radius: 3px;
         overflow: hidden;
-        box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+        box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
 
         &--front {
             background-color: $color-white;
@@ -29,22 +29,46 @@
             transform: rotateY(180deg);
 
             &-1 {
-                background-image: linear-gradient(to right bottom, $color-card-1-primary, $color-card-1-secondary);
+                background-image: linear-gradient(
+                    to right bottom,
+                    $color-card-1-primary,
+                    $color-card-1-secondary
+                );
             }
             &-2 {
-                background-image: linear-gradient(to right bottom, $color-card-2-primary, $color-card-2-secondary);
+                background-image: linear-gradient(
+                    to right bottom,
+                    $color-card-2-primary,
+                    $color-card-2-secondary
+                );
             }
             &-3 {
-                background-image: linear-gradient(to right bottom, $color-card-3-primary, $color-card-3-secondary);
+                background-image: linear-gradient(
+                    to right bottom,
+                    $color-card-3-primary,
+                    $color-card-3-secondary
+                );
             }
             &-4 {
-                background-image: linear-gradient(to right bottom, $color-card-4-primary, $color-card-4-secondary);
+                background-image: linear-gradient(
+                    to right bottom,
+                    $color-card-4-primary,
+                    $color-card-4-secondary
+                );
             }
             &-5 {
-                background-image: linear-gradient(to right bottom, $color-card-5-primary, $color-card-5-secondary);
+                background-image: linear-gradient(
+                    to right bottom,
+                    $color-card-5-primary,
+                    $color-card-5-secondary
+                );
             }
             &-6 {
-                background-image: linear-gradient(to right bottom, $color-card-6-primary, $color-card-6-secondary);
+                background-image: linear-gradient(
+                    to right bottom,
+                    $color-card-6-primary,
+                    $color-card-6-secondary
+                );
             }
         }
     }
@@ -64,9 +88,9 @@
         height: 12rem;
         background-blend-mode: screen;
         -moz-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-        -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);        
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
         clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-        
+
         &--1 {
             background-image: url(../img/sketch.jpg);
             -webkit-filter: grayscale(1); /* Old WebKit */
@@ -124,22 +148,46 @@
         box-decoration-break: clone;
 
         &--1 {
-            background-image: linear-gradient(to right bottom, rgba($color-card-1-primary, .9), rgba($color-card-1-secondary, .9));
+            background-image: linear-gradient(
+                to right bottom,
+                rgba($color-card-1-primary, 0.9),
+                rgba($color-card-1-secondary, 0.9)
+            );
         }
         &--2 {
-            background-image: linear-gradient(to right bottom, rgba($color-card-2-primary, .9), rgba($color-card-2-secondary, .9));
+            background-image: linear-gradient(
+                to right bottom,
+                rgba($color-card-2-primary, 0.9),
+                rgba($color-card-2-secondary, 0.9)
+            );
         }
         &--3 {
-            background-image: linear-gradient(to right bottom, rgba($color-card-3-primary, .9), rgba($color-card-3-secondary, .9));
+            background-image: linear-gradient(
+                to right bottom,
+                rgba($color-card-3-primary, 0.9),
+                rgba($color-card-3-secondary, 0.9)
+            );
         }
         &--4 {
-            background-image: linear-gradient(to right bottom, rgba($color-card-4-primary, .9), rgba($color-card-4-secondary, .9));
+            background-image: linear-gradient(
+                to right bottom,
+                rgba($color-card-4-primary, 0.9),
+                rgba($color-card-4-secondary, 0.9)
+            );
         }
         &--5 {
-            background-image: linear-gradient(to right bottom, rgba($color-card-5-primary, .9), rgba($color-card-5-secondary, .9));
+            background-image: linear-gradient(
+                to right bottom,
+                rgba($color-card-5-primary, 0.9),
+                rgba($color-card-5-secondary, 0.9)
+            );
         }
         &--6 {
-            background-image: linear-gradient(to right bottom, rgba($color-card-6-primary, .9), rgba($color-card-6-secondary, .9));
+            background-image: linear-gradient(
+                to right bottom,
+                rgba($color-card-6-primary, 0.9),
+                rgba($color-card-6-secondary, 0.9)
+            );
         }
     }
 
@@ -186,7 +234,7 @@
         height: auto;
         border-radius: 3px;
         background-color: #fff;
-        box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+        box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
         margin: 0 3rem;
 
         &__side {
@@ -201,7 +249,7 @@
         }
 
         &:hover &__side--front {
-            transform: rotateY(0)
+            transform: rotateY(0);
         }
 
         .card__details {
@@ -220,5 +268,5 @@
         &__box {
             text-align: center;
         }
-   }
+    }
 }

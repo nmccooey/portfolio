@@ -5,7 +5,7 @@
         width: 50%;
         border-radius: 2px;
         position: absolute;
-        transition: all .2s;
+        transition: all 0.2s;
         filter: drop-shadow(1px 1px 2px #222);
 
         @include respond(tab-port) {
@@ -23,7 +23,7 @@
         @include respond(tab-port) {
             top: 0;
             left: 0;
-            width: 33%;                
+            width: 33%;
         }
 
         &--p2 {
@@ -35,7 +35,7 @@
         @include respond(tab-port) {
             top: 0;
             left: 0;
-            width: 33%;                
+            width: 33%;
             z-index: 100;
         }
 
