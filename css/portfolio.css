@@ -205,7 +205,7 @@ body {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); }
     .card__picture--1 {
-      background-image: url(../img/sketch.jpg);
+      background-image: url(../img/movies.jpg);
       -webkit-filter: grayscale(1);
       /* Old WebKit */
       filter: grayscale(1); }
@@ -230,7 +230,7 @@ body {
       /* Old WebKit */
       filter: grayscale(1); }
     .card__picture--6 {
-      background-image: url(../img/tic_tac_toe.png);
+      background-image: url(../img/sketch.jpg);
       -webkit-filter: grayscale(1);
       /* Old WebKit */
       filter: grayscale(1); }
