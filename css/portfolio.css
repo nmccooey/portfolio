@@ -337,7 +337,7 @@ body {
         top: 0;
         left: 0;
         width: 33%; } }
-    .composition__photo--p2 {
+    .composition__photo--p3 {
       left: 66%;
       top: 0;
       width: 35%; }
@@ -347,7 +347,7 @@ body {
         left: 0;
         width: 33%;
         z-index: 100; } }
-    .composition__photo--p3 {
+    .composition__photo--p2 {
       left: 32%;
       top: 50%;
       width: 35%; }
